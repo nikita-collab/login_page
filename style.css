@@ -1,0 +1,114 @@
+*{
+    margin: 200;
+    padding:200;
+    box-sizing: border-box;
+}
+:root{
+    --dark-color: #361999;
+    --laight-color: #78fff1;
+
+}
+body{
+    height: 100vh;
+    background:linear-gradient(to right top ,var(--dark-color),var(--laight-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+   
+}
+.custom-block{
+    width: 300px;
+    height: 350px;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 80px;
+    background: linear-gradient(to right top,#361999,#78fff1);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+button{
+    background: linear-gradient(to right top,#361999,#78fff1);
+    border: 1px solid #78fff1;
+    color: white;
+    padding: 10px 20px;
+    font: size 16px;
+    border-radius:8px;
+    cursor: pointer;
+    
+    overflow: hidden;
+    position: relative;
+}
+input{
+    background: linear-gradient(to right top,#361999,#78fff1);
+    border: 1px solid #78fff1 ;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 12px;
+    margin-bottom: 30px;   
+}
+::placeholder{
+color: white;
+}
+button::after {
+ background: rgba(255, 255, 255, 0.4);
+ content: '';
+ height: 80px;
+ left: -20px;
+ position: absolute;
+ top: 0px;
+ transform: skewX(15deg);
+ width: 20px;
+ transition: transform 1s;
+}
+button:hover::after{
+    transform: translateX(100px);
+}
+.circle1{
+    top: 690px;
+    left: -140px;
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    background:linear-gradient(to left, #78fff1,#361999);
+    border-radius: 50%;
+    animation: move 10s infinite;
+   
+}
+@keyframes move{
+   0%{
+    transform:translateX(-100px);
+   }
+   100%{
+    transform: translateX(100vw);
+   }
+}
+.circle2{
+    top: -420px;
+    left: -10px;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background:linear-gradient(to left, #78fff1,#361999);
+    border-radius: 50%;
+    animation: move1 10s infinite;
+   
+}
+@keyframes move1{
+   0%{
+    transform:translateY(-100px);
+   }
+   100%{
+    transform: translateY(100vw);
+   }
+}
+img{
+    width: 60px;
+    margin-bottom: 30px;
+    
+}

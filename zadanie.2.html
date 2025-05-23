@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sing in</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <form action="login.php" method="post"></form>
+
+    <form class="custom-block">
+        <img src="https://th.bing.com/th/id/R.19fa7497013a87bd77f7adb96beaf768?rik=144XvMigWWj2bw&riu=http%3a%2f%2fwww.pngall.com%2fwp-content%2fuploads%2f5%2fUser-Profile-PNG-High-Quality-Image.png&ehk=%2bat%2brmqQuJrWL609bAlrUPYgzj%2b%2f7L1ErXRTN6ZyxR0%3d&risl=&pid=ImgRaw&r=0">
+        <input type="text" placeholder="User" >
+        
+        <input type="password" id="password" name="password" placeholder="Password" > 
+        <button onclick="showPassword()">Login</button>
+        </form>
+<div class="circle1"></div>
+<div class="circle2"></div>
+<script>
+    function showPassword() {
+        const passwordField = document.getElementById("password");
+        const password = passwordField.value 
+        alert("Twoje haslo " + password)
+
+    }
+</script>
+
+</body>
+</html>
